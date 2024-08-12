@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 import UserGreeting from './UserGreeting';
 import AboutPage from './AboutPage';
+import Button from './components/Button';
 
 function App() {
   return (
@@ -22,26 +23,27 @@ function App() {
         <Routes>
           <Route path="/about" element={<AboutPage />} />
           <Route path="/" element={
-            <header className="App-header">
+            <div className="p-8">
+              <h1 className="text-3xl font-bold mb-4">Button Component Example</h1>
               <UserGreeting />
+              <div className="space-x-4 mt-4">
+                <Button color="blue" size="small" onClick={() => alert('Blue button clicked!')}>
+                  Blue Button
+                </Button>
+                <Button color="green" onClick={() => alert('Green button clicked!')}>
+                  Green Button
+                </Button>
+                <Button color="red" size="large" onClick={() => alert('Red button clicked!')}>
+                  Red Button
+                </Button>
+              </div>
               <Link 
                 to="/about" 
-                className="mt-8 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300"
+                className="mt-8 inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300"
               >
                 Go to About Page
               </Link>
-              <p className="mt-8">
-                Edit <code>src/App.js</code> and save to reload.
-              </p>
-              <a
-                className="App-link"
-                href="https://reactjs.org"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Learn React
-              </a>
-            </header>
+            </div>
           } />
         </Routes>
       </div>

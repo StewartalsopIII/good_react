@@ -11,14 +11,14 @@ const AboutPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-blue-100 flex flex-col items-center">
       <div className="w-full bg-gradient-to-r from-blue-400 to-blue-600 text-white py-20 mb-12 shadow-md">
-        <h1 className="text-5xl font-bold mb-4 animate-fade-in">About Us</h1>
-        <p className="text-xl max-w-3xl mx-auto px-4 animate-fade-in-delay">
+        <h1 className="text-5xl font-bold mb-4">About Us</h1>
+        <p className="text-xl max-w-3xl mx-auto px-4">
           Dedicated to creating amazing React applications and helping developers learn and grow.
         </p>
       </div>
 
       <div className="max-w-4xl w-full px-4 mb-12">
-        <p className="text-xl text-gray-700 text-center leading-relaxed mb-8 animate-fade-in-delay">
+        <p className="text-xl text-gray-700 text-center leading-relaxed mb-8">
           Welcome to our About page! This is where you can learn more about our company, 
           our mission, and our team. We're passionate about pushing the boundaries of web development 
           and fostering a community of skilled, innovative developers.
