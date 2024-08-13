@@ -16,7 +16,7 @@ const ProfileHeader = () => {
         {/* Profile Picture */}
         <div className="absolute -top-16 left-6 z-10">
           <img 
-            src="/api/placeholder/160/160" 
+            src="/capybara_in_suit.jpg"
             alt="Profile" 
             className="w-32 h-32 rounded-full border-4 border-white shadow-lg"
           />
