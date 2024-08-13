@@ -4,6 +4,7 @@ import './App.css';
 import UserGreeting from './UserGreeting';
 import AboutPage from './AboutPage';
 import Button from './components/Button';
+import ProfileHeader from './components/ProfileHeader';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/" element={
             <div className="p-8">
               <h1 className="text-3xl font-bold mb-4">Button Component Example</h1>
+              <ProfileHeader />
               <UserGreeting />
               <div className="space-x-4 mt-4">
                 <Button color="blue" size="small" onClick={() => alert('Blue button clicked!')}>
